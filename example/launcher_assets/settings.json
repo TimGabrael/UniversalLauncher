@@ -1,0 +1,8 @@
+{
+	"BackgroundImagePath": "launcher_assets/background.png",
+	"SubProcess": "content/t1.txt",
+	"ComparePath": "content",
+	"ApiKey": "YOUR_KEY",
+	"FolderId": "TOP_LEVEL_FOLDER_ID",
+	"AutoStart": false
+}

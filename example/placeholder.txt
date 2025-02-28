@@ -1,0 +1,4 @@
+This is the ideal place for the launcher, it will not be synced and is easily accessable
+
+the full content of this top level folder should be uploaded to Google drive and then made available publicly
+this is then the folder that should be used as the folderId in the settings

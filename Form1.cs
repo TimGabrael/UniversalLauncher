@@ -48,6 +48,7 @@ namespace UniversalLauncher
             string exeDir = Path.GetDirectoryName(Application.ExecutablePath);
             Directory.SetCurrentDirectory(exeDir);
             LoadSettings();
+            this.DoubleBuffered = true;
             initializationTask = InitializeDriveService();
         }
 
@@ -82,7 +83,6 @@ namespace UniversalLauncher
                     {
                         var request = driveService.Files.Get(file.Item2);
                         var stream = new MemoryStream();
-
                         await request.DownloadAsync(stream);
                         {
                             System.IO.FileInfo filePathEstablisher = new System.IO.FileInfo(savePath);
@@ -342,6 +342,4 @@ namespace UniversalLauncher
             OnFinishProgress();
         }
     }
-
-
 }
